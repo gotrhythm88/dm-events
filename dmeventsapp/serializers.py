@@ -31,7 +31,7 @@ class EventSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Event
 		fields = ('id', 'title', 'description', 'hashtag',
-			'startDate', 'endDate', 'instructions', 'prizes', 'link',
+			'startDate', 'endDate', 'location', 'instructions', 'prizes', 'link',
 			'imagePath', 'visibility', 'noSocialSharing', 'password',
 			'questions', 'participants')
 

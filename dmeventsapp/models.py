@@ -7,6 +7,7 @@ class Event(models.Model):
 	hashtag = models.CharField(max_length=15, blank=True, null=True)
 	startDate = models.DateTimeField(default=timezone.now)
 	endDate = models.DateTimeField(default=timezone.now)
+	location = models.CharField(max_length=50, blank=True, null=True)
 	instructions = models.TextField(blank=True, null=True)
 	prizes = models.TextField(blank=True, null=True)
 	link = models.CharField(max_length=200, blank=True, null=True)
